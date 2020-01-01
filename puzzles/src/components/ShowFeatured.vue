@@ -1,15 +1,13 @@
 <template>
     <div id="featured">
         <h2>Boxes of Puzzles</h2>
-        <!-- <ul class="cleanList">
-            <li data-test="featured-product" v-for="product in featuredProducts" :key="product.id">{{ product.name }}</li>
-        </ul> -->
-        <show-product class="product" v-for="product in featuredProducts" :key="product.slug" :product="product"></show-product>
+        <div v-if="this.products">
+            <show-product class="product" v-for="product in featuredProducts" :key="product.slug" :product="product"></show-product>
+        </div>
     </div>
 </template>
 
 <script>
-    import _ from "lodash";
     import ShowProduct from "@/components/ShowProduct.vue";
 
     export default {
@@ -21,7 +19,7 @@
         },
         computed: {
             featuredProducts: function() {
-                return _.filter(this.products, product => {
+                return this.products.filter(product => {
                     return product.categories.includes(this.category);
                 });
             },

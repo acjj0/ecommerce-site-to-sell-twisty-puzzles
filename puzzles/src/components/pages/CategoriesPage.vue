@@ -9,7 +9,6 @@
 
 <script>
     //import * as app from './../../app.js';
-    import _ from "lodash";
 
     export default {
         name: "CategoriesPage",

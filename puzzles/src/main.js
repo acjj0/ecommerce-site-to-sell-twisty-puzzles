@@ -3,18 +3,18 @@ import App from "./App.vue";
 import VueRouter from "vue-router";
 import ProductsPage from "./components/pages/ProductsPage.vue";
 import HomePage from "./components/pages/HomePage.vue";
-import CategoriesPage from "./components/pages/CategoriesPage.vue";
+// import CategoriesPage from "./components/pages/CategoriesPage.vue";
 import ProductPage from "./components/pages/ProductPage.vue";
-import CartPage from "./components/pages/CartPage.vue";
-import ProductCreatePage from "./components/pages/ProductCreatePage.vue";
+// import CartPage from "./components/pages/CartPage.vue";
+// import ProductCreatePage from "./components/pages/ProductCreatePage.vue";
 import NotFoundPage from "./components/pages/NotFoundPage.vue";
 import store from "./store";
 import Vuelidate from "vuelidate";
 import "./filters.js";
 
-/* eslint-disable no-unused-vars */
-const _ = require("lodash");
-/* eslint-enable no-unused-vars */
+// /* eslint-disable no-unused-vars */
+// const _ = require("lodash");
+// /* eslint-enable no-unused-vars */
 
 Vue.use(VueRouter);
 Vue.use(Vuelidate);
@@ -26,10 +26,10 @@ ROUTING
 const routes = [
     { path: "/", component: HomePage, name: "home" },
     { path: "/products", component: ProductsPage, name: "puzzles" },
-    { path: "/product/create", component: ProductCreatePage, name: "create" },
+    // { path: "/product/create", component: ProductCreatePage, name: "create" },
     { path: "/product/:slug", component: ProductPage, name: "puzzle", props: true },
-    { path: "/categories", component: CategoriesPage, name: "categories" },
-    { path: "/cart", component: CartPage, name: "cart" },
+    // { path: "/categories", component: CategoriesPage, name: "categories" },
+    // { path: "/cart", component: CartPage, name: "cart" },
     // https://router.vuejs.org/guide/essentials/history-mode.html#caveat
     { path: "*", component: NotFoundPage }
 ];

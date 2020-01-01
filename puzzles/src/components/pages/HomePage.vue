@@ -9,9 +9,9 @@
         </div>
 
         <div class="my-info">
-            To buy puzzles to me, write to
-            <a href="mailto:puzzle2020@gmx.com?subject=Interested in Buying Your Puzzles">Email Me</a>. Use puzzle number from Puzzle page, or box number from
-            home page to tell me which puzzles you want to buy.
+            To buy puzzles, write to
+            <a href="mailto:puzzle2020@gmx.com?subject=Interested in Buying Your Puzzles">puzzle2020 at gmx.com</a>. Write puzzle numbers from Puzzle page, or
+            box numbers from home page to tell me which puzzles you want to buy.
         </div>
         <div class="my-info">Include your country & pin/zip code for shipping estimate.</div>
         <div class="my-info">

@@ -1,8 +1,10 @@
 import Vue from "vue";
 import Vuex from "vuex";
 
-import * as app from "./../app.js";
-import _ from "lodash";
+// import * as app from "./../app.js";
+import puzzles from "@/puzzles.json";
+
+// import _ from "lodash";
 
 Vue.use(Vuex);
 
@@ -25,10 +27,10 @@ export default new Vuex.Store({
         },
         setProducts(state, payload) {
             state.products = payload;
-        },
-        addProduct(state, payload) {
-            _.merge(state.products, payload);
         }
+        // addProduct(state, payload) {
+        //     _.merge(state.products, payload);
+        // }
     },
     // Actions will not mutate state; instead they will commit mutations to mutate the state
     // Actions can contain arbitrary asynchronous operations
@@ -38,10 +40,11 @@ export default new Vuex.Store({
     //     See App.vue for where this is dispatched ala this.$store.dispatch('setProducts');
     actions: {
         setProducts(context) {
-            app.axios.get(app.config.api + "products.json").then(response => {
-                // https://stackoverflow.com/questions/39156533/firebase-database-returns-null-at-beginning-of-each-new-node
-                context.commit("setProducts", response.data);
-            });
+            // app.axios.get(app.config.api + "products.json").then(response => {
+            //     // https://stackoverflow.com/questions/39156533/firebase-database-returns-null-at-beginning-of-each-new-node
+            //     context.commit("setProducts", response.data);
+            // });
+            context.commit("setProducts", puzzles);
         }
     },
     // Getters are used when we want to to compute derived state based on store state
@@ -53,8 +56,8 @@ export default new Vuex.Store({
         // https://vuex.vuejs.org/guide/getters.html#method-style-access
         getProductBySlug(state) {
             return function(slug) {
-                return _.find(state.products, { slug: slug });
-                //return state.products.find(product => product.id == id);
+                // return _.find(state.products, { slug: slug });
+                return state.products.find(product => product.slug == slug);
             };
         }
     }
