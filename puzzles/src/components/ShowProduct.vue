@@ -9,6 +9,8 @@
                 :alt="'Product image of  ' + product.name"
                 :src="product.slug | productImage"
             />
+
+            <!-- <image-item class="product-thumb" :source="product.slug | productImage" onerror="this.style.display='none'" /> -->
         </router-link>
 
         <div card-body>
@@ -29,9 +31,14 @@
 </template>
 
 <script>
+    // import ImageItem from "@/components/ImageItem.vue";
+
     export default {
         name: "ShowProduct",
         props: ["product"],
+        // components: {
+        //     "image-item": ImageItem
+        // },
         filters: {
             shortDescription(value) {
                 if (value && value.length > 100) {
@@ -56,7 +63,6 @@
         border-radius: 10px;
         text-align: center;
     }
-
     .product-thumb {
         width: 80%;
         padding-left: 9%;

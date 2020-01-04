@@ -4,8 +4,6 @@ import Vuex from "vuex";
 // import * as app from "./../app.js";
 import puzzles from "@/puzzles.json";
 
-// import _ from "lodash";
-
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -57,7 +55,7 @@ export default new Vuex.Store({
         getProductBySlug(state) {
             return function(slug) {
                 // return _.find(state.products, { slug: slug });
-                return state.products.find(product => product.slug == slug);
+                return state.products ? state.products.find(product => product.slug == slug) : null;
             };
         }
     }

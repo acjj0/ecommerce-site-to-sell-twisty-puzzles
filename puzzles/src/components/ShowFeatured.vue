@@ -19,12 +19,17 @@
         },
         computed: {
             featuredProducts: function() {
-                return this.products.filter(product => {
+                return this.availableProducts.filter(product => {
                     return product.categories.includes(this.category);
                 });
             },
             products: function() {
                 return this.$store.state.products;
+            },
+            availableProducts: function() {
+                return this.products.filter(item => {
+                    return item.quantity;
+                });
             }
         },
         data: function() {

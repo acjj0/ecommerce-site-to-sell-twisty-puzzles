@@ -849,7 +849,7 @@
         "categories": "",
         "description": "$20 - K Ball w Case Lot.JPG",
         "name": "95. K Ball w Case Lot",
-        "price": "20",
+        "price": "20 each, $80 total",
         "slug": "RGQ803",
         "image": "RGQ803.jpg",
         "quantity": 1
@@ -2418,7 +2418,7 @@
         "price": "TBD",
         "slug": "BGO769",
         "image": "BGO769.jpg",
-        "quantity": 1
+        "quantity": 0
     },
     {
         "categories": "box",
