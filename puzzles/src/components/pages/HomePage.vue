@@ -4,14 +4,14 @@
             My puzzle collection for sale below.
         </div>
         <div class="my-info">
-            My individual puzzles to the extent I've had time to sort them are in the Puzzles link. My boxes of puzzles are below. Puzzles in images crossed out
-            in red color are already sold.
+            My individual puzzles to the extent I've had time to sort them are in the Puzzles link. My boxes of puzzles are on the Home page link. Puzzles in
+            images crossed out in red color are already sold.
         </div>
 
         <div class="my-info">
             To buy puzzles, write to
-            <a href="mailto:puzzle2020@gmx.com?subject=Interested in Buying Your Puzzles">puzzle2020 at gmx.com</a>. Write puzzle numbers from Puzzle page, or
-            box numbers from home page to tell me which puzzles you want to buy.
+            <a href="mailto:puzzle2020@gmx.com?subject=Interested in Buying Your Puzzles">puzzle2020@gmx.com</a>. Write puzzle numbers from Puzzle page, or box
+            numbers from home page to tell me which puzzles you want to buy.
         </div>
         <div class="my-info">Include your country & pin/zip code for shipping estimate.</div>
         <div class="my-info">
