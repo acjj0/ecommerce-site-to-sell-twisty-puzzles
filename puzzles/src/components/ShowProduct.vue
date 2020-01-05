@@ -3,14 +3,14 @@
         <router-link class="link-text" data-test="product-link" :to="{ name: 'puzzle', params: { slug: product.slug } }">
             <h2 data-test="product-name" class="product-name">{{ product.name }}</h2>
 
-            <img
+            <!-- <img
                 v-bind:data-test="'product-image-' + product.slug"
                 class="product-thumb"
                 :alt="'Product image of  ' + product.name"
                 :src="product.slug | productImage"
-            />
+            /> -->
 
-            <!-- <image-item class="product-thumb" :source="product.slug | productImage" onerror="this.style.display='none'" /> -->
+            <image-item class="product-thumb" :source="product.slug | productImage" onerror="this.style.display='none'" />
         </router-link>
 
         <div card-body>
@@ -31,14 +31,14 @@
 </template>
 
 <script>
-    // import ImageItem from "@/components/ImageItem.vue";
+    import ImageItem from "@/components/ImageItem.vue";
 
     export default {
         name: "ShowProduct",
         props: ["product"],
-        // components: {
-        //     "image-item": ImageItem
-        // },
+        components: {
+            "image-item": ImageItem
+        },
         filters: {
             shortDescription(value) {
                 if (value && value.length > 100) {

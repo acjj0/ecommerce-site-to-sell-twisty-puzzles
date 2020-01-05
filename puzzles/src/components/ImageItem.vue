@@ -37,9 +37,9 @@
 <style scoped lang="scss">
     .image {
         &__wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
             border-radius: 4px;
             margin: 5px;
 
@@ -49,6 +49,7 @@
                         visibility: visible;
                         opacity: 1;
                         border: 0;
+                        max-height: 360px;
                     }
                 }
             }
