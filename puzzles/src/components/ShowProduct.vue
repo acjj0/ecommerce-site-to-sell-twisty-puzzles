@@ -10,7 +10,7 @@
                 :src="product.slug | productImage"
             /> -->
 
-            <image-item class="product-thumb" :source="product.slug | productImage" onerror="this.style.display='none'" />
+            <image-item class="product-thumb" :source="product.slug | productThumb" onerror="this.style.display='none'" />
         </router-link>
 
         <div card-body>

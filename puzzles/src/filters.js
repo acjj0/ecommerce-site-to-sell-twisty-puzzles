@@ -8,3 +8,11 @@ Vue.filter("productImage", function(slug) {
         return require("./assets/images/image-not-available.jpg");
     }
 });
+
+Vue.filter("productThumb", function(slug) {
+    try {
+        return require("" + "./assets/images/thumbnails/thumb." + slug + ".jpg");
+    } catch (e) {
+        return require("./assets/images/image-not-available.jpg");
+    }
+});
